@@ -11,7 +11,7 @@ bundle = joblib.load(MODEL_PATH)
 model = bundle["model"]
 FEATURES = bundle["features"]
 
-app = FastAPI(title="Fraud Detection API")
+app = FastAPI(title="Fraud Detection API") # create an instance of the API
 
 
 # The shape of one transaction sent to the API (FastAPI validates it for us)
